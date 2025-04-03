@@ -38,7 +38,7 @@ body {
     width: 85vh;
     height: 50vh;
     padding: 15px; 
-    background-color: grey;
+    background-color: rgb(188, 192, 195);
     display: flex;
     flex-direction: column; 
     gap: 10px;
@@ -59,32 +59,16 @@ body {
     
 }
 
-
-.franja-footer{
-    width: 130vh;
-    height: 17vh;
-    background-color: white;
-    display: flex;
-    align-items: center;
-    margin: 20px; 
-}
-
-.subcontenedor-footer {
-    width: 17vh;
-    height: 17vh;
-    background-color: lightblue;
-}
-
 .franja-izq {
     width: 60vh;
     height: 5vh;
-    background-color: rgb(188, 192, 195);
+    background-color: rgb(230, 233, 235);
 }
 
 .franja-derecha {
     width: 60vh;
     height: 5vh;
-    background-color: rgb(188, 192, 195);
+    background-color: rgb(230, 233, 235);
 }
 
 .subcontenedor-derecha {
@@ -124,4 +108,35 @@ body {
     height: 1vh;
     background-color: white;
 }
+
+
+.texto-footer {
+    width: 30vh;
+    height: 1vh;
+    background-color: grey;
+
+}
+
+.perfil-footer {
+    width: 7vh;
+    height: 7vh;
+    background-color: rgb(255, 255, 255);
+}
+
+.franja-footer{
+    width: 130vh;
+    height: 17vh;
+    background-color: rgb(188, 192, 195);
+    display: flex;
+    align-items: center;
+    margin: 20px; 
+    gap: 20px;
+}
+
+.subcontenedor-footer {
+    width: 17vh;
+    height: 17vh;
+    background-color: lightblue;
+}
+
 
