@@ -39,6 +39,10 @@ body {
     height: 50vh;
     padding: 15px; 
     background-color: grey;
+    display: flex;
+    flex-direction: column; 
+    gap: 10px;
+    padding: 20px;
     
 }
 
@@ -48,9 +52,10 @@ body {
     padding: 15px; 
     background-color: white;
     display: flex;
-    flex-direction: column; /* Acomoda los cuadrados en vertical */
-    gap: 10px; /* Espacio entre cada cuadrado */
+    flex-direction: column; 
+    gap: 10px;
     padding: 20px;
+
     
 }
 
@@ -89,7 +94,34 @@ body {
 }
 
 .cuadrado-pequeño {
-    width: 10vh;
+    width: 7vh;
     height: 14vh;
     background-color: black;
 }
+
+.texto-pequeño {
+    width: 30vh;
+    height: 1vh;
+    background-color: grey;
+
+}
+
+.texto-pequeño:nth-child(3n-1) {
+    margin-bottom: 20px; 
+}
+
+.franja-img {
+    width: 40vh;
+    height: 2vh;
+    background-color: black;
+    align-items: center;
+    margin-top: 250px;
+
+}
+
+.texto-img {
+    width: calc(33.33% - 10px); 
+    height: 1vh;
+    background-color: white;
+}
+
