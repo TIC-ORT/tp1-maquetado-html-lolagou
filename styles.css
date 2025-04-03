@@ -1,0 +1,95 @@
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color:  rgb(52, 49, 49);
+    color: black;
+}
+
+.contenedor-header {
+    width: 130vh;
+    height: 17vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    margin: 20px; 
+}
+
+.subcontenedor {
+    width: 17vh;
+    height: 17vh;
+    background-color: lightblue;
+}
+
+.contenedor-boxes {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 20px; 
+    margin: 20px; 
+    padding: 20px; 
+}
+
+.box-izquierda{
+    width: 85vh;
+    height: 50vh;
+    padding: 15px; 
+    background-color: grey;
+    
+}
+
+.box-derecha {
+    width: 85vh;
+    height: 50vh;
+    padding: 15px; 
+    background-color: white;
+    display: flex;
+    flex-direction: column; /* Acomoda los cuadrados en vertical */
+    gap: 10px; /* Espacio entre cada cuadrado */
+    padding: 20px;
+    
+}
+
+
+.franja-footer{
+    width: 130vh;
+    height: 17vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    margin: 20px; 
+}
+
+.subcontenedor-footer {
+    width: 17vh;
+    height: 17vh;
+    background-color: lightblue;
+}
+
+.franja-izq {
+    width: 60vh;
+    height: 5vh;
+    background-color: rgb(188, 192, 195);
+}
+
+.franja-derecha {
+    width: 60vh;
+    height: 5vh;
+    background-color: rgb(188, 192, 195);
+}
+
+.subcontenedor-derecha {
+    width: 37vh;
+    height: 17vh;
+    background-color: lightblue;
+}
+
+.cuadrado-pequeño {
+    width: 10vh;
+    height: 14vh;
+    background-color: black;
+}
