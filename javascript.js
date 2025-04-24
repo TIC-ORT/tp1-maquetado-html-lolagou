@@ -3,6 +3,8 @@ document.addEventListener("DOMContentLoaded", function () {
     let container2 = document.querySelector(".box-izquierda");
     let container3 = document.querySelector(".franja-footer");
     let container4 = document.querySelector(".franja-footer");
+  
+
 
     for (let i = 0; i < 3; i++) {
         let div = document.createElement("div");
@@ -28,4 +30,5 @@ document.addEventListener("DOMContentLoaded", function () {
         div.classList.add("perfil-footer");
         container4.appendChild(div);
     }
+
 });
