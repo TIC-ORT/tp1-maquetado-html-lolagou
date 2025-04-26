@@ -9,7 +9,7 @@
 
     /* Tamaños */
     --ancho-principal: 130vh;
-    --alto-header-footer: 17vh;
+    --alto-header-footer: 24vh;
     --padding-box: 20px;
     --gap-general: 10px;
 
@@ -30,7 +30,9 @@ body {
     color: var(--color-negro);
 }
 
-.contenedor-header {
+/* HEADER*/
+
+.contenedor-principal {
     width: var(--ancho-principal);
     height: var(--alto-header-footer);
     background-color: var(--color-blanco);
@@ -38,29 +40,24 @@ body {
     align-items: center;
     margin: 20px;
     gap: 20px;
-}
-
-.franja-footer {
-    width: var(--ancho-principal);
-    height: var(--alto-header-footer);
-    background-color: var(--color-gris-claro);
     display: flex;
     align-items: center;
-    margin: 20px;
-    gap: 20px;
 }
 
-.subcontenedor,
-.subcontenedor-footer {
-    width: 17vh;
-    height: var(--alto-header-footer);
-    background-color: var(--color-azul-claro);
+.contenedor-header {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: var(--gap-general);
+    margin: 20px; /* si querés, para darle aire */
 }
+
+.item-cuadrado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
 
 .cuadrado {
     width: 4vh;
@@ -72,9 +69,57 @@ body {
     font-size: var(--fuente-size);
 }
 
-.contenedor {
+.contenedor-cuadraditos {
     display: flex;
+    flex-direction: row;
+    gap: var(--gap-general);
+    margin-left: 20px;
 }
+
+
+
+.info-cuadraditos {
+    width: 30vh;
+    height: 3px;
+    background-color: var(--color-gris-oscuro);
+    margin: var(--gap-general);
+    display: grid;
+    place-items: center;
+    font-size: var(--fuente-size);
+}
+
+.texto-cuadrado {
+    width: 10vh;
+    height: 3px;
+    background-color: var(--color-gris-oscuro);
+}
+
+
+.linea-sub {
+    width: 10vh;
+    height: 15px;
+    background-color: var(--color-blanco);
+}
+
+.linea-sub-gris {
+    width: 6vh;
+    height: 15px;
+    background-color: var(--color-negro);
+}
+
+
+/* HEADER--FLECHAS*/
+
+.flecha-izquierda,
+.flecha-derecha {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: var(--color-gris-oscuro); /* o cualquier color */
+}
+
+/* BODY, BOXES RIGHT AND LEFT*/
 
 .contenedor-boxes {
     display: flex;
@@ -111,27 +156,9 @@ body {
 }
 
 .subcontenedor-derecha {
-    width: 37vh;
-    height: var(--alto-header-footer);
+    width: 20vh;
+    height: 10vh;
     background-color: var(--color-azul-claro);
-}
-
-.cuadrado-pequeño {
-    width: 7vh;
-    height: 14vh;
-    background-color: var(--color-negro);
-}
-
-.texto-pequeño,
-.texto-footer,
-.titulo-cuadraditos {
-    width: 30vh;
-    height: 1vh;
-    background-color: var(--color-negro);
-}
-
-.texto-pequeño:nth-child(3n-1) {
-    margin-bottom: 20px;
 }
 
 .franja-img {
@@ -154,50 +181,61 @@ body {
     background-color: var(--color-gris-oscuro);
 }
 
+.img {
+    width: 10vh;
+    height: 10vh;
+}
+
+/* TEXTOS*/
+
+
+.texto-pequeño,
+.texto-footer,
+.titulo-cuadraditos {
+    width: 30vh;
+    height: 1vh;
+    background-color: var(--color-negro);
+}
+
+.texto-pequeño:nth-child(3n-1) {
+    margin-bottom: 20px;
+}
+
+/* FOOTER*/
+
+
 .perfil-footer {
     width: 7vh;
     height: 7vh;
     background-color: var(--color-blanco);
 }
 
-.img {
-    width: 10vh;
-    height: 10vh;
-}
-
-.contenedor-cuadraditos {
-    display: flex;
-    flex-direction: row;
-    gap: var(--gap-general);
-    margin-left: 20px;
-}
-
-.info-cuadraditos {
-    width: 30vh;
-    height: 3px;
-    background-color: var(--color-gris-oscuro);
-    margin: var(--gap-general);
-    display: grid;
-    place-items: center;
-    font-size: var(--fuente-size);
-}
-
-.linea-sub {
-    width: 10vh;
-    height: 15px;
-    background-color: var(--color-blanco);
-}
-
-.linea-sub-gris {
-    width: 6vh;
-    height: 15px;
-    background-color: var(--color-negro);
-}
-
 .checkbox {
     width: 2vh;
     height: 16px;
     background-color: var(--color-negro);
+}
+
+.franja-footer {
+    width: var(--ancho-principal);
+    height: var(--alto-header-footer);
+    background-color: var(--color-gris-claro);
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    gap: 20px;
+}
+
+.subcontenedor,
+.subcontenedor-footer {
+    width: 21vh;
+    height: var(--alto-header-footer);
+    background-color: var(--color-azul-claro);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gap-general);
 }
 
 .linea-checkbox {
