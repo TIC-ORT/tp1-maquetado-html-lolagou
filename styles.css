@@ -127,7 +127,7 @@ body {
 .titulo-cuadraditos {
     width: 30vh;
     height: 1vh;
-    background-color: var(--color-gris-oscuro);
+    background-color: var(--color-negro);
 }
 
 .texto-pequeño:nth-child(3n-1) {
@@ -191,5 +191,17 @@ body {
 .linea-sub-gris {
     width: 6vh;
     height: 15px;
-    background-color: var(--color-gris-oscuro);
+    background-color: var(--color-negro);
+}
+
+.checkbox {
+    width: 2vh;
+    height: 16px;
+    background-color: var(--color-negro);
+}
+
+.linea-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
